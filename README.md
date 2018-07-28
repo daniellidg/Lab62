@@ -59,7 +59,7 @@ I needed a javascript version to generate these ids in a browser.
 ### Explanation
 If you generate a 6 character random string, then there are 62<sup>6</sup> = 56,800,235,584 possible combinations of the base 62 character set. That means if you generated a unique id once every second, it would take more than 657,000 days, or 1800+ years, to run out (please see my [warning](#warning)).
 
-The [character set](https://github.com/harmankang/Lab62/) I use is alphanumerical. Including both upper and lower cases, there are 62 alphanumerical characters in the set. 
+The [character set](https://github.com/harmankang/Lab62/blob/b317878ea883b79b8a70c9aca91349bf17d581cf/src/Lab62.js#L13) I use is alphanumerical. Including both upper and lower cases, there are 62 alphanumerical characters in the set. 
 
 I looked into Base64 encoding, but it gives `/`'s and that is not acceptable for URL use-cases.
 
