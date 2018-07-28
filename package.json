@@ -1,0 +1,12 @@
+{
+  "name": "Lab62",
+  "description": "Create short, unique, and human readable IDs",
+  "author": "Harman Kang",
+  "version": "1.0.0",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint src/Lab62.js"
+  }
+}
