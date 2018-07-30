@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
   <meta name="author" content="Harman Kang">
   <meta name="description" content="Lab62 demo page">
 	<title>Lab62 Demo</title>
-	<script type="text/javascript" src="b62ID.js-master/src/Lab62.js"></script>
+	<script type="text/javascript">var Lab62=(function(){function Lab62(){this.delegate={b62char:"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",b62string:""};this.generator=function(length){for(var i=0;i<length;i++){var index=Math.floor(Math.random()*(62));this.delegate.b62string+=this.delegate.b62char[index];} return this.delegate.b62string;};} Lab62.prototype.make=function(length){return this.generator(length);};return Lab62;}());</script>
 	<style type="text/css">
     .container {
       min-width: 300px;
@@ -41,7 +42,6 @@
       
         let gen = new Lab62();
         document.getElementById("result").innerHTML = gen.make(len);
-
       }
     </script>
   </div>
